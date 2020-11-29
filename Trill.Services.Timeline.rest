@@ -1,0 +1,8 @@
+@url = http://localhost:5060
+@userId = dbe1396d-21a1-4228-95da-de7200a8c352
+
+###
+GET {{url}}
+
+###
+GET {{url}}/timelines/{{userId}}
