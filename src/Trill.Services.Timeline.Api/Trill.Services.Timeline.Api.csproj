@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Convey" Version="0.4.*" />
+    <PackageReference Include="Convey.Logging" Version="0.4.*" />
+    <PackageReference Include="Convey.WebApi" Version="0.4.*" />
+    <PackageReference Include="Convey.WebApi.CQRS" Version="0.4.*" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="certs\**" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Trill.Services.Timeline.Core\Trill.Services.Timeline.Core.csproj" />
+    <ProjectReference Include="..\Trill.Services.Timeline.Infrastructure\Trill.Services.Timeline.Infrastructure.csproj" />
+  </ItemGroup>
+  
+</Project>
